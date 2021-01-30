@@ -1,0 +1,40 @@
+.features {
+  padding-top: 150px;
+  padding-bottom: 153px;
+  background-color: $white-color;
+}
+
+.features__container {
+  width: $features-container-width;
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: 263px 263px 263px 263px;
+  gap: 38px;
+}
+
+.features__item {
+  text-align: center;
+
+  span {
+    display: block;
+    margin-bottom: 13px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    color: $button-color;
+  }
+
+  p {
+    margin: 0;
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+  }
+}

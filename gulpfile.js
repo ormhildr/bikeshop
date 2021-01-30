@@ -120,6 +120,8 @@ const build = gulp.series(
   copy,
   styles,
   js,
+  images,
+  createWebp,
   sprite,
   html
 );

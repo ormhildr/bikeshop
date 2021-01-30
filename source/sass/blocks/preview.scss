@@ -1,0 +1,39 @@
+.preview {
+  padding-top: 120px;
+  padding-bottom: 424px;
+  background-color: $preview-background-color;
+
+  p {
+    margin: 0 auto;
+    margin-bottom: 56px;
+    width: 340px;
+    font-weight: 300;
+    line-height: 28px;
+    color: $nav-text-color;
+    text-align: center;
+  }
+}
+
+.preview__container {
+  width: 929px;
+}
+
+.preview__title {
+  margin: 0;
+  margin-bottom: 20px;
+  color: $white-color;
+}
+
+.preview__video {
+  position: absolute;
+
+  button {
+    position: absolute;
+    padding: 0;
+    top: 43%;
+    left: 47%;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+}

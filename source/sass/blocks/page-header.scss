@@ -1,0 +1,50 @@
+.page-header {
+  @include bg-image("header-background-desktop@1x.jpg");
+  background-position: top center;
+  background-color: $bc-header-color;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header-background-desktop@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.page-header__container {
+  width: $header-container-width;
+}
+
+.page-header__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 240px;
+  color:$white-color;
+}
+
+.page-header__main {
+  width: 381px;
+
+  p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.page-header__logo {
+  display: block;
+  margin-bottom: 19px;
+}
+
+.page-header__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+}
+
+.page-header__form {
+  width: 327px;
+  padding-top: 4px;
+}

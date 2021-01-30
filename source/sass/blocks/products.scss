@@ -1,0 +1,87 @@
+.products {
+  padding-top: 149px;
+  padding-bottom: 148px;
+  background-color: $products-background-color;
+}
+
+.products__container {
+  width: $products-container-width;
+}
+
+.products__title {
+  margin: 0;
+  margin-bottom: 51px;
+}
+
+.products__list {
+  display: grid;
+  grid-template-columns: 342px 342px 342px;
+  gap: 50px;
+}
+
+.products__item {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+  }
+
+  &--roadbike {
+    padding-top: 10px;
+    z-index: 10;
+
+    &::after {
+      width: 180px;
+      height: 180px;
+      top: 166px;
+      left: -60px;
+      border: 27px solid $button-color;
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
+
+  &--mountainbike {
+    padding-top: 39px;
+
+    &::before,
+    &::after {
+      width: 47px;
+      height: 47px;
+      border: 8px solid $button-color;
+    }
+
+    &::before {
+      top: 21px;
+      left: -19px;
+    }
+
+    &::after {
+      right: -23px;
+      bottom: 32px;
+    }
+  }
+
+  &--childbike {
+    &::before {
+      width: 95px;
+      height: 95px;
+      top: -32px;
+      right: -36px;
+      border-radius: 50%;
+      border: 17px solid $button-color;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    padding-top: 11px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+    text-align: center;
+  }
+}
