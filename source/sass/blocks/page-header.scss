@@ -11,6 +11,10 @@
 
 .page-header__container {
   width: $header-container-width;
+
+  @media (max-width: $tablet-width-max) {
+    width: auto;
+  }
 }
 
 .page-header__inner {

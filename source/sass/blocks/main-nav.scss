@@ -3,6 +3,12 @@
   padding-top: 20px;
   padding-bottom: 9px;
   border-bottom: 1px solid $nav-border-color;
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 100px;
+    padding-bottom: 110px;
+    background-color: $white-color;
+  }
 }
 
 .main-nav__list {
@@ -14,5 +20,40 @@
   a {
     font-weight: 300;
     color: $nav-text-color;
+
+    @media (max-width: $tablet-width-max) {
+      width: 100%;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      padding-left: 16px;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 140%;
+      color: $nav-mobile-text-color;
+
+      &::after {
+        position: absolute;
+        content: url("../img/icon-arow-nav.svg");
+        width: 25px;
+        height: 25px;
+        right: 20px;
+      }
+    }
+  }
+
+  @media (max-width: $tablet-width-max) {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.main-nav__item {
+  @media (max-width: $tablet-width-max) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: $nav-mobile-link-color;
   }
 }
