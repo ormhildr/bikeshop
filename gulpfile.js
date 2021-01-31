@@ -39,8 +39,8 @@ exports.styles = styles;
 
 const js = () => {
   return gulp.src("source/js/script.js")
-    .pipe(uglify())
-    .pipe(rename("scripts.min.js"))
+    // .pipe(uglify())
+    // .pipe(rename("scripts.min.js"))
     .pipe(gulp.dest("build/js"));
 }
 
@@ -107,7 +107,7 @@ exports.clean = clean;
 
 const html = () => {
   return gulp.src("source/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    // .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 };
 

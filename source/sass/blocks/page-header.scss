@@ -2,10 +2,14 @@
   @include bg-image("header-background-desktop@1x.jpg");
   background-position: top center;
   background-color: $bc-header-color;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/header-background-desktop@2x.jpg");
-    background-size: cover;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    background-image: none;
   }
 }
 
@@ -22,6 +26,28 @@
   justify-content: space-between;
   margin-bottom: 240px;
   color:$white-color;
+
+  @media (max-width: $tablet-width-max) {
+    flex-direction: column;
+    margin-bottom: 0;
+    padding-top: 25px;
+
+    @include bg-image("header-background-tablet@1x.jpg");
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header-background-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    @include bg-image("header-background-mobile@1x.jpg");
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header-background-mobile@2x.jpg");
+    }
+  }
 }
 
 .page-header__main {
@@ -33,11 +59,45 @@
     font-size: 20px;
     line-height: 32px;
   }
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    width: auto;
+    text-align: center;
+
+    p {
+      margin: 0 auto;
+      width: 77%;
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 70px;
+
+    p {
+      width: 83%;
+    }
+  }
 }
 
 .page-header__logo {
   display: block;
   margin-bottom: 19px;
+
+  @media (max-width: $tablet-width-max) {
+    position: relative;
+    margin-bottom: 77px;
+    right: 60px;
+    text-align: left;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 63px;
+    padding-left: 17px;
+    right: 0;
+  }
 }
 
 .page-header__title {
@@ -46,9 +106,30 @@
   font-weight: bold;
   font-size: 46px;
   line-height: 64px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
+.page-header__form-wrapper {
+  @media (max-width: $tablet-width-max) {
+    background-color: $white-color;
+  }
 }
 
 .page-header__form {
   width: 327px;
   padding-top: 4px;
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 90%;
+  }
 }

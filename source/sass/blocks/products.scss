@@ -2,21 +2,54 @@
   padding-top: 149px;
   padding-bottom: 148px;
   background-color: $products-background-color;
+  overflow: hidden;
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 50px;
+    padding-bottom: 68px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-bottom: 54px;
+  }
 }
 
 .products__container {
   width: $products-container-width;
+
+  @media (max-width: $tablet-width-max) {
+    width: 590px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 270px;
+  }
 }
 
 .products__title {
   margin: 0;
   margin-bottom: 51px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 20px;
+  }
 }
 
 .products__list {
   display: grid;
   grid-template-columns: 342px 342px 342px;
   gap: 50px;
+
+  @media (max-width: $tablet-width-max) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    grid-template-columns: auto;
+    gap: 40px;
+  }
 }
 
 .products__item {
@@ -40,6 +73,18 @@
       border: 27px solid $button-color;
       border-radius: 50%;
       z-index: -1;
+
+      @media (max-width: $tablet-width-max) {
+        width: 127px;
+        height: 127px;
+        top: 211px;
+        left: -37px;
+        border: 18px solid $button-color;
+      }
+
+      @media (max-width: $mobile-width-max) {
+        left: -25px;
+      }
     }
   }
 
@@ -51,6 +96,10 @@
       width: 47px;
       height: 47px;
       border: 8px solid $button-color;
+
+      @media (max-width: $tablet-width-max) {
+        display: none;
+      }
     }
 
     &::before {
@@ -62,6 +111,14 @@
       right: -23px;
       bottom: 32px;
     }
+
+    @media (max-width: $tablet-width-max) {
+      padding-top: 10px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      padding-top: 1px;
+    }
   }
 
   &--childbike {
@@ -72,6 +129,19 @@
       right: -36px;
       border-radius: 50%;
       border: 17px solid $button-color;
+
+      @media (max-width: $tablet-width-max) {
+        width: 68px;
+        height: 68px;
+        top: -21px;
+        right: -25px;
+        border: 13px solid $button-color;
+      }
+
+      @media (max-width: $mobile-width-max) {
+        top: -19px;
+        right: -14px;
+      }
     }
   }
 
@@ -83,5 +153,13 @@
     line-height: 34px;
     letter-spacing: -0.5px;
     text-align: center;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    img {
+      width: 270px;
+      height: 300px;
+      object-fit: contain;
+    }
   }
 }

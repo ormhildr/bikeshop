@@ -6,6 +6,16 @@
     font-size: 17px;
     line-height: 28px;
     text-align: center;
+
+    @media (max-width: $tablet-width-max) {
+      margin-bottom: 30px;
+      font-size: 18px;
+      color: $text-color;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 22px;
+    }
   }
 
   button {
@@ -20,6 +30,7 @@
     font-weight: 600;
     font-size: 15px;
     line-height: 21px;
+    cursor: pointer;
 }
 }
 
@@ -35,5 +46,13 @@
     font-size: 15px;
     line-height: 24px;
     color: $input-text-color;
+
+    @media (max-width: $tablet-width-max) {
+      padding-left: 24px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 18px;
+    }
   }
 }

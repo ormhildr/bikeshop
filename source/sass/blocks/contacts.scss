@@ -12,20 +12,69 @@
     line-height: 31px;
     text-align: center;
     opacity: 0.7;
+
+    @media (max-width: $tablet-width-max) {
+      padding-right: 0;
+      width: 91%;
+      margin-bottom: 19px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      width: 80%;
+    }
   }
 
   img {
     margin-bottom: 25px;
   }
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 149px;
+    padding-bottom: 50px;
+
+    img {
+      margin-bottom: 6px;
+      height: 545px;
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 119px;
+    padding-bottom: 47px;
+
+    img {
+      margin-bottom: 17px;
+      width: 100%;
+      height: 250px;
+    }
+  }
 }
 
 .contacts__container {
   width: 957px;
+
+  @media (max-width: $tablet-width-max) {
+    width: 698px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: auto;
+  }
 }
 
 .contacts__title {
   margin: 0;
   margin-bottom: 29px;
+
+  @media(max-width: $tablet-width-max) {
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .contacts__inner {
@@ -34,6 +83,13 @@
   margin: 0 auto;
   padding-left: 25px;
   width: 531px;
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+    align-items:center;
+    padding-left: 48px;
+    width: auto;
+  }
 }
 
 .contacts__link {
@@ -51,6 +107,10 @@
         top: 5px;
         left: -42px;
       }
+
+      @media(max-width: $mobile-width-max) {
+        margin-bottom: 14px;
+      }
     }
 
     &--phone {
@@ -58,6 +118,10 @@
         content:url("../img/icon-contacts-phone.svg");
         top: 2px;
         left: -38px;
+      }
+
+      @media (max-width: $mobile-width-max) {
+        padding-right: 25px;
       }
     }
 }
