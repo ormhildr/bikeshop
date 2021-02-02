@@ -1,7 +1,6 @@
 .main-nav {
   margin-bottom: 256px;
 
-
   &--nojs {
     .main-nav__toggle {
       display: none;
@@ -26,50 +25,50 @@
   @media (max-width: $tablet-width-max) {
     margin-bottom: 0;
 
-      &--closed {
-        .main-nav__list {
-          display: none;
-        }
-
-        .main-nav__toggle {
-          &::before {
-            box-shadow: 0 6px 0 0 $text-color, 0 12px 0 0 $text-color;
-          }
-        }
+    &--closed {
+      .main-nav__list {
+        display: none;
       }
 
-      &--closed-nojs {
-        .main-nav__list {
-          display: block;
+      .main-nav__toggle {
+        &::before {
+          box-shadow: 0 6px 0 0 $text-color, 0 12px 0 0 $text-color;
         }
       }
+    }
 
-      &--opened {
-        position: fixed;
+    &--closed-nojs {
+      .main-nav__list {
+        display: block;
+      }
+    }
 
-        .main-nav__toggle {
-          background-color: transparent;
+    &--opened {
+      position: fixed;
 
-          &::before,
-          &::after {
-            width: 23px;
-            top: 22px;
-            left: 13px;
-            background-color: $close-button-color;
-          }
+      .main-nav__toggle {
+        background-color: transparent;
 
-          &::after {
-            content: "";
-            position: absolute;
-            height: 2px;
-            transform: rotate(-45deg);
-          }
+        &::before,
+        &::after {
+          width: 23px;
+          top: 22px;
+          left: 13px;
+          background-color: $close-button-color;
+        }
 
-          &::before {
-            transform: rotate(45deg);
-          }
+        &::after {
+          content: "";
+          position: absolute;
+          height: 2px;
+          transform: rotate(-45deg);
+        }
+
+        &::before {
+          transform: rotate(45deg);
         }
       }
+    }
   }
 }
 
@@ -83,39 +82,46 @@
   border-bottom: 1px solid $nav-border-color;
 
   @media (max-width: $tablet-width-max) {
-      padding-top: 100px;
-      padding-bottom: 110px;
-      background-color: $white-color;
-  }
-
-  a {
-    font-weight: 300;
-    color: $nav-text-color;
-
-    @media (max-width: $tablet-width-max) {
-      width: 100%;
-      padding-top: 17px;
-      padding-bottom: 17px;
-      padding-left: 16px;
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 140%;
-      color: $nav-mobile-text-color;
-
-      &::after {
-        position: absolute;
-        content: url("../img/icon-arow-nav.svg");
-        width: 25px;
-        height: 25px;
-        right: 20px;
-      }
-    }
+    padding-top: 100px;
+    padding-bottom: 110px;
+    background-color: $white-color;
   }
 
   @media (max-width: $tablet-width-max) {
     flex-direction: column;
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+.main-nav__list a {
+  font-weight: 300;
+  color: $nav-text-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white-color;
+    transition: 0.5s;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 16px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 140%;
+    color: $nav-mobile-text-color;
+
+    &::after {
+      position: absolute;
+      content: url("../img/icon-arow-nav.svg");
+      width: 25px;
+      height: 25px;
+      right: 20px;
+    }
   }
 }
 
@@ -132,7 +138,7 @@
 .main-nav__toggle {
   display: none;
 
-  @media(max-width: $tablet-width-max) {
+  @media (max-width: $tablet-width-max) {
     position: absolute;
     display: block;
     top: 0;

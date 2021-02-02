@@ -55,6 +55,7 @@ const images = () => {
       imagemin.mozjpeg({ progressive: true }),
       imagemin.svgo()
     ]))
+    .pipe(gulp.dest("build/img"));
 }
 
 exports.images = images;

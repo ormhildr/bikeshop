@@ -13,6 +13,20 @@
   }
 }
 
+.page-header h1 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
 .page-header__container {
   width: $header-container-width;
 
@@ -25,7 +39,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 240px;
-  color:$white-color;
+  color: $white-color;
 
   @media (max-width: $tablet-width-max) {
     flex-direction: column;
@@ -53,83 +67,62 @@
 .page-header__main {
   width: 381px;
 
-  p {
-    margin: 0;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 32px;
-  }
-
   @media (max-width: $tablet-width-max) {
     margin: 0 auto;
     margin-bottom: 80px;
     width: auto;
     text-align: center;
-
-    p {
-      margin: 0 auto;
-      width: 77%;
-      font-size: 18px;
-    }
   }
 
   @media (max-width: $mobile-width-max) {
     margin-bottom: 70px;
+  }
+}
 
-    p {
-      width: 83%;
-    }
+.page-header__main p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0 auto;
+    width: 77%;
+    font-size: 18px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 83%;
   }
 }
 
 .page-header__logo {
   display: block;
-  margin-bottom: 19px;
+  margin-bottom: 30px;
 
   @media (max-width: $tablet-width-max) {
     position: relative;
-    margin-bottom: 77px;
+    margin-bottom: 88px;
     right: 60px;
     text-align: left;
   }
 
   @media (max-width: $mobile-width-max) {
-    margin-bottom: 63px;
+    margin-bottom: 74px;
     padding-left: 17px;
     right: 0;
   }
 }
 
-.page-header__title {
-  margin: 0;
-  margin-bottom: 25px;
-  font-weight: bold;
-  font-size: 46px;
-  line-height: 64px;
-
-  @media (max-width: $tablet-width-max) {
-    margin-bottom: 20px;
-    font-size: 30px;
-    line-height: 42px;
-  }
+.page-header__logo img {
+  width: auto;
 }
 
 .page-header__form-wrapper {
-  @media (max-width: $tablet-width-max) {
-    background-color: $white-color;
-  }
-}
-
-.page-header__form {
-  width: 327px;
   padding-top: 4px;
 
   @media (max-width: $tablet-width-max) {
-    margin: 0 auto;
     padding-top: 70px;
-  }
-
-  @media (max-width: $mobile-width-max) {
-    width: 90%;
+    background-color: $white-color;
   }
 }
