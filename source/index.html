@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Интернет-магазин велосипедов">
   <title>Moon: Магазин велосипедов</title>
   <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-300.woff2" as="font">
   <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-regular.woff2" as="font">
@@ -35,7 +36,7 @@
       </nav>
       <div class="page-header__inner">
         <div class="page-header__main">
-          <a class="page-header__logo">
+          <a class="page-header__logo page-header__logo--disable" href="index.html">
             <img src="img/logo-site.svg" alt="Moon: магазин велосипедов" width="68" height="21">
           </a>
           <h1>Мы продаем велосипеды</h1>
@@ -52,7 +53,7 @@
               <label class="visually-hidden" for="user-phone">Номер телефона</label>
               <input id="user-phone" type="tel" placeholder="Введите Ваш номер телефона" inputmode="tel" required>
             </div>
-            <button type="submit">Подобрать велосипед мечты</button>
+            <button class="form__button" type="submit">Подобрать велосипед мечты</button>
           </form>
         </div>
       </div>
@@ -128,7 +129,7 @@
             <img src="img/preview-video-desktop@1x.jpg" srcset="img/preview-video-desktop@2x.jpg 2x"
               alt="Видео про выбор велосипеда" width="929" height="522">
           </picture>
-          <button type="button">
+          <button class="preview__button" type="button" aria-label="Кнопка для воспроизведения видео">
             <svg width="65" height="65">
               <use xlink:href="img/sprite.svg#icon-play"></use>
             </svg>

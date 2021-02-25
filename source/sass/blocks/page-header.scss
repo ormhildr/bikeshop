@@ -100,6 +100,11 @@
   display: block;
   margin-bottom: 30px;
 
+  &--disable {
+    pointer-events: none;
+    cursor: default;
+  }
+
   @media (max-width: $tablet-width-max) {
     position: relative;
     margin-bottom: 88px;

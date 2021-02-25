@@ -75,6 +75,8 @@
 .main-nav__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 879px;
   padding-top: 20px;
   padding-right: 23px;
   padding-bottom: 9px;

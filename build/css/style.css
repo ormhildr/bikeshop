@@ -571,6 +571,9 @@ body {
 .page-header__logo {
   display: block;
   margin-bottom: 30px; }
+  .page-header__logo--disable {
+    pointer-events: none;
+    cursor: default; }
   @media (max-width: 1023px) {
     .page-header__logo {
       position: relative;
@@ -635,6 +638,8 @@ body {
 .main-nav__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 879px;
   padding-top: 20px;
   padding-right: 23px;
   padding-bottom: 9px;
@@ -714,7 +719,7 @@ body {
     .form form {
       width: 90%; } }
 
-.form button {
+.form__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -727,7 +732,7 @@ body {
   font-size: 15px;
   line-height: 21px;
   cursor: pointer; }
-  .form button:hover, .form button:active, .form button:focus {
+  .form__button:hover, .form__button:active, .form__button:focus {
     background-color: #08ad9e;
     transition: 0.5s; }
 
@@ -1030,7 +1035,7 @@ body {
 .preview__video {
   position: absolute; }
 
-.preview__video button {
+.preview__button {
   position: absolute;
   padding: 0;
   top: 43%;
@@ -1039,11 +1044,11 @@ body {
   border: 0;
   cursor: pointer; }
   @media (max-width: 1023px) {
-    .preview__video button {
+    .preview__button {
       top: 33%;
       left: 41%; } }
   @media (max-width: 767px) {
-    .preview__video button {
+    .preview__button {
       top: 28%;
       left: 40%; } }
 
@@ -1150,7 +1155,7 @@ body {
 .contacts__link {
   position: relative;
   color: #000000;
-  opacity: 0.5; }
+  opacity: 0.7; }
   .contacts__link::before {
     position: absolute; }
   .contacts__link:hover, .contacts__link:active, .contacts__link:focus {
