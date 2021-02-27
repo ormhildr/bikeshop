@@ -87,6 +87,7 @@
 .contacts__inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding-left: 25px;
   width: 531px;

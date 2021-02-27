@@ -63,6 +63,11 @@
   line-height: 24px;
   color: $input-text-color;
 
+  &:hover,
+  &:focus {
+    background-color: $input-hover;
+  }
+
   @media (max-width: $tablet-width-max) {
     padding-left: 24px;
   }

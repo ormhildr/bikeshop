@@ -50,6 +50,7 @@
   "dependencies": {
     "del": "^5.1.0",
     "gulp-htmlmin": "^5.0.1",
+    "imask": "^6.0.7",
     "normalize-scss": "^7.0.1"
   }
 }

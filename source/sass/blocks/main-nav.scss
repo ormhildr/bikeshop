@@ -24,6 +24,7 @@
 
   @media (max-width: $tablet-width-max) {
     margin-bottom: 0;
+    background-color: $white-color;
 
     &--closed {
       .main-nav__list {
@@ -45,6 +46,7 @@
 
     &--opened {
       position: fixed;
+      height: 100vh;
 
       .main-nav__toggle {
         background-color: transparent;
@@ -74,19 +76,20 @@
 
 .main-nav__list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 879px;
   padding-top: 20px;
   padding-right: 23px;
   padding-bottom: 9px;
   padding-left: 23px;
   border-bottom: 1px solid $nav-border-color;
 
+  @media (min-width: $desktop-width) {
+    max-width: 879px;
+  }
+
   @media (max-width: $tablet-width-max) {
     padding-top: 100px;
     padding-bottom: 110px;
-    background-color: $white-color;
   }
 
   @media (max-width: $tablet-width-max) {
@@ -128,6 +131,12 @@
 }
 
 .main-nav__item {
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-right: 134px;
+    }
+  }
+
   @media (max-width: $tablet-width-max) {
     position: relative;
     display: flex;

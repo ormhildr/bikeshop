@@ -15,7 +15,7 @@
 }
 
 .products__container {
-  width: $products-container-width;
+  width: 78%;
 
   @media (max-width: $tablet-width-max) {
     width: 590px;
@@ -44,7 +44,7 @@
 
 .products__list {
   display: grid;
-  grid-template-columns: 342px 342px 342px;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
 
   @media (max-width: $tablet-width-max) {
