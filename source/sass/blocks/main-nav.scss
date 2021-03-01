@@ -47,6 +47,7 @@
     &--opened {
       position: fixed;
       height: 100vh;
+      overflow-y: scroll;
 
       .main-nav__toggle {
         background-color: transparent;
